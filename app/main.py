@@ -25,7 +25,7 @@ while True:
     try: 
         conn = psycopg2.connect(host='localhost', database='fastapi', user='postgres', password='awdrg153', cursor_factory=RealDictCursor)
 
-        cursor = conn.cursor() #aby sa dali pouzivat SQL prikazy
+        cursor = conn.cursor()
         print("Database connection was succesfull!")
         break
     except Exception as error:
